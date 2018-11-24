@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AD0A0E0-F034-4494-84E5-9CC8C8694CA3}</ProjectGuid>
+    <ProjectGuid>{51E918DA-1D8D-4DCE-932C-E2D59DB4ED59}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Init</RootNamespace>
-    <AssemblyName>Init</AssemblyName>
+    <RootNamespace>MP.ReportingServices.ConsoleTest</RootNamespace>
+    <AssemblyName>MP.ReportingServices.ConsoleTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MP.ReportingServices\MP.ReportingServices.csproj">
+      <Project>{8ff1f5b7-5085-424b-86ae-7fa267f2dfde}</Project>
+      <Name>MP.ReportingServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
